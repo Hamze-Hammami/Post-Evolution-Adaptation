@@ -21,12 +21,13 @@ The system runs in two phases:
 ---
 
 ## Repository Structure
-
+ 
 | Folder | Stage | Description |
 |---|---|---|
-| `ER/` | Evolution | Evolutionary robotics training and evaluation. Produces the original gene (baseline genotype) for the T-maze task. |
-| `Synaptic-ER-Light/` | Experiment 1 | Light-sensitive experiment. The GA gene is trained in high luminosity, then evaluated under low luminosity with and without Hebbian adaptation. |
-| `Synaptic-ER-Obstacles/` | Experiment 2 | Obstacle-avoidance experiment. A corridor-aligned gene is evaluated against added obstacles, GA alone versus GA plus Hebbian. |
+| [`ER/`](./ER/) | Evolution | Evolutionary robotics training and evaluation. Produces the original gene (baseline genotype) for the T-maze task. |
+| [`Synaptic-ER-Light/`](./Synaptic-ER-Light/) | Experiment 1 | Light-sensitive experiment. The GA gene is trained in high luminosity, then evaluated under low luminosity with and without Hebbian adaptation. |
+| [`Synaptic-ER-Obstacles/`](./Synaptic-ER-Obstacles/) | Experiment 2 | Obstacle-avoidance experiment. A corridor-aligned gene is evaluated against added obstacles, GA alone versus GA plus Hebbian. |
+ 
 
 ---
 
