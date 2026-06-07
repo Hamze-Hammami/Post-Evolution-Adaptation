@@ -1,4 +1,4 @@
-# Synaptic Hebbian Evaluation
+# Synaptic Hebbian Evaluation: Synaptic-ER-Light
 
 *Copyright (c) 2024 Hamze Hammami (ORCID: 0009-0004-5754-5842)*
 
@@ -34,3 +34,5 @@ To fully visualise the effect of Hebbian learning on the gene, follow these step
 ## Notes
 
 `Best.npy` is a pre-evolved gene. To retrain it from scratch, use the [`ER/`](../ER/) experiment.
+
+A current limitation of the Hebbian mechanism is that adaptation is not guaranteed across all environment configurations. Results depend on both the specific environment setup and the structure of the original evolved gene, meaning adaptation may not always succeed under certain conditions.
