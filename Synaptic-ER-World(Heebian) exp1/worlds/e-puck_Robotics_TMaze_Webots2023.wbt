@@ -1,0 +1,252 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+  info [
+    "Copyright (C) 2006 Laboratory of Intelligent Systems (LIS), EPFL"
+    "Thanks to jean-christophe.zufferey@epfl.ch"
+  ]
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.7071057814660382 0.7071077809056435 5.551115123136879e-17 3.1415966524690035
+  position 0.0001665691202187076 2.0976175422062093 -4.265259659962417e-06
+  follow "e-puck"
+  followType "None"
+}
+TexturedBackground {
+  texture "mars"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 -1.5707996938995747
+  floorSize 0.9 0.9
+  floorTileSize 0.9 0.9
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "ground.png"
+      ]
+    }
+    roughness 0.2
+    metalness 0
+  }
+  wallHeight 0.05
+}
+DEF spot_light SpotLight {
+  attenuation 0 0 1
+  beamWidth 0.8
+  cutOffAngle 0.8
+  direction -0.1 0 0
+  intensity 2
+  location 0.1 0 0.3
+  radius 0.2
+}
+DEF GA Robot {
+  children [
+    Receiver {
+      channel 20
+    }
+    Emitter {
+      channel 19
+    }
+    Display {
+      width 500
+      height 150
+    }
+  ]
+  name "Supervisor"
+  controller "Supervisor-SynapticER"
+  supervisor TRUE
+}
+DEF OBSTACLE1 Solid {
+  translation -0.002842 0.025 -0.432401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.9 0.05 0.03
+      }
+    }
+  ]
+  name "red box"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation -0.002842 0.025 -0.242401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.9 0.05 0.06
+      }
+    }
+  ]
+  name "red box(8)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation -0.432842 0.025 -0.002401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.03 0.05 0.9
+      }
+    }
+  ]
+  name "red box(2)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation 0.437158 0.025 -0.002401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.03 0.05 0.9
+      }
+    }
+  ]
+  name "red box(3)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation 0.087 0.025 0.181
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.5
+      }
+    }
+  ]
+  name "red box(4)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation -0.07 0.024 0.173
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.5
+      }
+    }
+  ]
+  name "red box(5)"
+  boundingObject USE BOX1
+}
+DEF Mark Solid {
+  translation 0.01 -0.1 0.193
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.11 0.05 0.08
+      }
+    }
+  ]
+  name "red box(13)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation -0.002842 0.025 0.437599
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.9 0.05 0.03
+      }
+    }
+  ]
+  name "red box(1)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation -0.244 0.025 -0.082401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.4 0.05 0.05
+      }
+    }
+  ]
+  name "red box(6)"
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation 0.261 0.025 -0.082401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.4 0.05 0.05
+      }
+    }
+  ]
+  name "red box(7)"
+  boundingObject USE BOX1
+}
+DEF Controller E-puck {
+  hidden position_0_0 -12.845084705404558
+  hidden position_0_1 -12.16420885413397
+  hidden rotation_1 0 1 0 5.648092484364516
+  hidden rotation_2 0 1 0 3.6232686761189927
+  translation 0.02500413392505503 -6.247185564001168e-05 0.3856091222944197
+  rotation -0.4780672821878598 0.6214181395793168 0.6207182690265317 2.2511792963216415
+  controller "epuck_python-SynapticER"
+  emitter_channel 20
+  receiver_channel 19
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}

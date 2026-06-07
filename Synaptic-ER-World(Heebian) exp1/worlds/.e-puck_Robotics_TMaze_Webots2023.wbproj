@@ -1,0 +1,13 @@
+Webots Project File version R2023b
+perspectives: 000000ff00000000fd00000002000000010000039f00000366fc0200000001fb0000001400540065007800740045006400690074006f0072010000001a000003660000008c00ffffff0000000300000780000000bcfc0100000001fb0000001a0043006f006e0073006f006c00650041006c006c0041006c006c0100000000000007800000006900ffffff000003df0000036600000001000000020000000100000008fc00000000
+simulationViewPerspectives: 000000ff0000000100000002000001050000033a0100000002010000000100
+sceneTreePerspectives: 000000ff000000010000000300000022000000c0000000fa0100000002010000000200
+maximizedDockId: -1
+centralWidgetVisible: 1
+projectionMode: PERSPECTIVE
+renderingMode: PLAIN
+orthographicViewHeight: 1.31769
+textFiles: 1 "../Synaptic-ER-World(Heebian) exp1/controllers/Supervisor-SynapticER/Supervisor-SynapticER.py" "../Synaptic-ER-World(Heebian) exp1/controllers/epuck_python-SynapticER/epuck_python-SynapticER.py" "../Synaptic-ER-World(Heebian) exp1/controllers/epuck_python-SynapticER/hebmlp.py" "../Synaptic-ER-World(Heebian) exp1/controllers/Supervisor-SynapticER/hebbian_visualizer.py"
+consoles: Console:All:All
+renderingDevicePerspectives: Supervisor:display;0;0.213333;0;0
+renderingDevicePerspectives: e-puck:camera;0;0.820513;0;0
