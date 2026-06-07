@@ -1,6 +1,3 @@
-# Robotics_GA (Heriot-Watt University - Robotics)
+# Robotics_GA 
 
-
-This repository contains a simple project that will support your studies on Genetic Algorithm using a simulated environtment (Webots).
-
-The instructions will be delivered during the laboratory sessions.
+code is in controllers
